@@ -4,10 +4,12 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import About from "./pages/about";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Header />
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/sign-in" element={<SignIn />} />
@@ -17,5 +19,5 @@ export default function App() {
        </Routes>
     </BrowserRouter>
   );
-  //27:02    https://www.youtube.com/watch?v=VAaUy_Moivw&t=24508s
+  //27:02    https://www.youtube.com/watch?v=VAaUy_Moivw&t=24508s 
 }
